@@ -1,0 +1,23 @@
+# Hermes Agent Configuration
+
+model:
+  provider: custom
+  default: custom/glm-5-1
+  base_url: https://win847.top/llmapi/v1
+  api_key: sk-aiproxy
+
+display:
+  theme: default
+  show_thinking: true
+  streaming: false
+
+gateway:
+  enabled: true
+  platforms:
+    - type: qqbot
+      app_id: 1904071403
+      secret: 3lUDxiTF2pdSH7yphaTNID96310zzz02
+
+qqbot:
+  enabled: true
+  require_mention: true
