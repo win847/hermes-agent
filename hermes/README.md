@@ -93,6 +93,39 @@ nano /workspace/hermes/config/config.yaml
 | 日志文件 | `/workspace/hermes/config/logs/` |
 | 记忆数据 | `/workspace/hermes/config/memories/` |
 
+## 快速启动
+更换虚拟机后，只需执行：
+```bash
+cd /workspace/hermes
+bash start.sh
+```
+
+选择 `1) 启动QQ网关（后台运行）` 即可一键启动所有服务！
+
+## 命令说明
+- `bash start.sh` - 配置环境并启动服务
+- `bash stop.sh` - 停止QQ网关
+- `hermes` - 使用Hermes CLI工具
+- `hermes gateway run` - 手动启动QQ网关（前台）
+- `tail -f /workspace/hermes/config/logs/gateway.log` - 查看网关日志
+
+## 持久化结构
+```
+/workspace/hermes/
+├── start.sh          # 一键启动脚本
+├── stop.sh           # 停止脚本
+├── code/             # Hermes代码（包含venv虚拟环境）
+├── config/           # 所有配置和数据
+│   ├── .env          # API密钥等环境变量
+│   ├── config.yaml   # 主配置文件
+│   ├── logs/         # 日志文件
+│   ├── sessions/     # 会话数据
+│   └── skills/       # 技能文件
+└── README.md         # 本说明文件
+```
+
 ## 注意事项
-- 每次重启后，先运行 `bash /workspace/hermes/start.sh` 重建符号链接
-- 所有数据都保存在 `/workspace/hermes/` 下，重启不会丢失
+- ✅ 所有数据、配置、代码都在 `/workspace/hermes/` 下
+- ✅ 更换虚拟机后只需运行 `bash start.sh` 即可恢复所有服务
+- ✅ QQBot和自定义模型配置都已持久化保存
+
