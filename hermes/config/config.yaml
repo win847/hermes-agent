@@ -13,10 +13,6 @@ display:
 
 gateway:
   enabled: true
-  platforms:
-    - type: qqbot
-      app_id: 1904071403
-      secret: 3lUDxiTF2pdSH7yphaTNID96310zzz02
 
 qqbot:
   enabled: true
