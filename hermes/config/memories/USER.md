@@ -1,0 +1,1 @@
+User communicates primarily in Chinese (Mandarin, casual/informal style). Technically knowledgeable — understands VMs, networking, GitHub workflows. Active on QQ platform. Expects accurate results and will call out wrong conclusions — caught a bad speed test report and corrected it immediately.

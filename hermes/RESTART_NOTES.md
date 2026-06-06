@@ -1,5 +1,11 @@
 # Hermes 重启测试笔记
 
+## 虚拟机状态记录
+- **当前状态**: ✅ 运行中
+- **网关状态**: ✅ 正在运行 (PID: 45103)
+- **QQBot状态**: ✅ 已连接
+- **最后检查**: 2026-06-06
+
 ## 状态检查
 - [ ] 确认 `/workspace/hermes/` 目录存在
 - [ ] 确认符号链接: `/root/.hermes` -> `/workspace/hermes/config`
@@ -31,3 +37,8 @@ cd /workspace/hermes && bash stop.sh
 - 模型: glm-5-1
 - QQ APP_ID: 1904071403
 - API: https://win847.top/llmapi/v1
+
+## 虚拟机存活策略
+- ✅ QQ网关持续运行 - 保持网络连接活跃
+- ✅ 所有数据在 /workspace/hermes/ - 持久化存储
+- ⏱️ 如遇超时，重新运行 `bash start.sh` 即可恢复
