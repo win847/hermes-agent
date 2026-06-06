@@ -1,8 +1,8 @@
 model:
-  default: gemini-2.5-flash-lite
+  default: glm-5-1
   provider: custom
-  base_url: https://win847.top/gemini/v1
-  api_key: sk-aliyun-gemini3-5flash-arch-use
+  base_url: https://win847.top/llmapi/v1
+  api_key: sk-aiproxy
 providers: {}
 fallback_providers: []
 credential_pool_strategies: {}
