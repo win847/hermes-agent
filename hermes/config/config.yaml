@@ -570,6 +570,16 @@ session_reset:
   idle_minutes: 1440
   at_hour: 4
 group_sessions_per_user: true
+platforms:
+  qqbot:
+    enabled: true
+    extra:
+      app_id: "1904071403"
+      client_secret: "3lUDxiTF2pdSH7yphaTNID96310zzz02"
+      dm_policy: "open"
+      group_policy: "open"
+      markdown_support: true
+
 platform_toolsets:
   cli:
   - hermes-cli
