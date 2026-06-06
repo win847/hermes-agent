@@ -1,0 +1,24 @@
+# Hermes Agent Configuration
+# 复制此文件为 config.yaml 并填入真实配置
+
+model:
+  provider: custom
+  default: custom/glm-5-1
+  base_url: https://your-api-host.com/v1
+  api_key: your_api_key_here
+
+display:
+  theme: default
+  show_thinking: true
+  streaming: false
+
+gateway:
+  enabled: true
+  # platforms:
+  #   - type: qqbot
+  #     app_id: your_qq_app_id
+  #     secret: your_qq_secret
+
+qqbot:
+  enabled: true
+  require_mention: true

@@ -1,7 +1,7 @@
 /venv/
-/_pycache/
-hecate/
-hecate-lib/
+/__pycache__
+/hecate/
+/hecate-lib/
 *.pyc*
 __pycache__/
 .venv/
@@ -17,3 +17,9 @@ export*
 __pycache__/model_tools.cpython-310.pyc
 __pycache__/web_tools.cpython-310.pyc
 logs/
+
+# Hermes config - sensitive files
+hermes/.env
+hermes/config/config.yaml
+hermes/config/logs/
+hermes/config/gateway.pid
