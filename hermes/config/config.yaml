@@ -280,6 +280,8 @@ display:
       streaming: true
     discord:
       streaming: false
+    qqbot:
+      streaming: false
   runtime_footer:
     enabled: false
     fields:
@@ -442,6 +444,11 @@ telegram:
   reactions: false
   channel_prompts: {}
   allowed_chats: ''
+qqbot:
+  require_mention: true
+  free_response_channels: ''
+  allowed_channels: ''
+  channel_prompts: {}
 mattermost:
   require_mention: true
   free_response_channels: ''
