@@ -21,11 +21,67 @@ bash start.sh
 hermes
 ```
 
-### 3. 配置 API Key
+### 3. 配置模型配置
 编辑配置文件：
 ```bash
-nano /workspace/hermes/config/.env
+nano /workspace/hermes/config/config.yaml
 ```
+
+## 当前模型配置
+| 配置项 | 值 |
+|--------|-----|
+| **默认模型** | `glm-5-1` |
+| **Provider** | `custom` |
+| **API Base URL** | `https://win847.top/llmapi/v1` |
+| **API Key** | `sk-aiproxy` |
+
+## 可用模型列表
+- Google/Gemini 系列
+  - `google/gemini-3.5-flash`
+  - `google/gemini-3.1-pro-preview`
+  - `google/gemini-3.1-flash-lite-preview`
+  - `google/gemini-3.1-flash-image-preview`
+  - `google/gemini-3-flash-preview`
+  - `google/gemini-2.5-pro`
+  - `google/gemini-2.5-flash`
+  - `google/gemini-2.0-flash-001`
+  - `google/gemini-2.0-flash-lite-001`
+  - `google/gemini-2.0-flash-lite`
+
+- GLM 系列
+  - `glm-5`
+  - `glm-5-1` (当前默认)
+
+- 其他开源模型
+  - `llama4-scout-17b-16e-instruct`
+  - `deepseek-coder-v2-lite-instruct`
+  - `gpt-oss-120b`
+  - `qwen2-5-coder-32b-instruct`
+  - `gemma4-31b-it`
+  - `qwen3-5-122b-a10b`
+  - `qwen3-6-35b-a3b`
+
+- AWS/Claude 系列
+  - `aws/anthropic.claude-haiku-4-5-20251001-v1:0`
+  - `aws/anthropic.claude-sonnet-4-5-20250929-v1:0`
+  - `aws/anthropic.claude-sonnet-4-6`
+  - `aws/anthropic.claude-opus-4-6-v1`
+  - `aws/anthropic.claude-opus-4-7`
+
+- Azure/GPT 系列
+  - `azure/aide-gpt-4-turbo`
+  - `azure/aide-gpt-4o`
+  - `azure/aide-gpt-4o-mini`
+  - `azure/aide-gpt-4.1`
+  - `azure/aide-gpt-4.1-mini`
+  - `azure/aide-gpt-4.1-nano`
+  - `azure/aide-gpt-5`
+  - `azure/aide-gpt-5-mini`
+  - `azure/aide-gpt-5-nano`
+  - `azure/gpt-5.5`
+  - `azure/aide-o3`
+  - `azure/aide-o3-mini`
+  - `azure/aide-o4-mini`
 
 ## 持久化路径说明
 | 项目 | 路径 |

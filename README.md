@@ -179,6 +179,30 @@ FAL_KEY=your_key_here
 WEB_TOOLS_DEBUG=true  # Enable web tools debug logging
 ```
 
+### Custom Model Configuration (Hermes Agent)
+
+The Hermes Agent is configured to use a custom model API:
+
+| Configuration | Value |
+|---------------|-------|
+| **Default Model** | `glm-5-1` |
+| **Provider** | `custom` |
+| **API Base URL** | `https://win847.top/llmapi/v1` |
+| **API Key** | `sk-aiproxy` |
+
+**Available Models Include:**
+- GLM 系列: `glm-5`, `glm-5-1` (default)
+- Google/Gemini 系列: `google/gemini-3.5-flash`, `google/gemini-3.1-pro-preview`, etc.
+- AWS/Claude 系列: Various Claude models from AWS
+- Azure/GPT 系列: Various GPT models from Azure
+- Open source: `llama4-scout-17b-16e-instruct`, `deepseek-coder-v2-lite-instruct`, and more
+
+**Configuration file location:**
+- [`/workspace/hermes/config/config.yaml`](file:///workspace/hermes/config/config.yaml)
+
+**Hermes Documentation:**
+- See [`/workspace/hermes/README.md`](file:///workspace/hermes/README.md) for detailed Hermes Agent configuration and usage.
+
 ### Command-Line Options
 
 ```bash
