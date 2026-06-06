@@ -27,3 +27,10 @@
 - 未 commit 的修改在重置后会全部丢失
 - 正确做法：修改文件后尽快 git add + git commit，commit 过的内容重置后仍保留
 - 重置后先 git log 确认最新 commit 是否是自己的，如果不是说明有远程更新，需 git pull 拉回
+§
+**VM 自保机制（最高优先级）**
+- 我运行在 VM 上（hostname: all-in-one-36-vci-87sp9），/workspace 是 git 仓库
+- ~/.hermes 实际指向 /workspace/hermes/config，所以记忆文件(MEMORY.md/USER.md)也在 /workspace 内
+- VM 重置 = git reset 到上次 commit，未 commit 的记忆修改会丢失
+- 强制规则：每次 memory 更新后，必须立即 git add + git commit /workspace/hermes/config/memories/ 下的文件
+- 远程仓库：github.com/win847/hermes-agent
