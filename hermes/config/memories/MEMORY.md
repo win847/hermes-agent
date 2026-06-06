@@ -20,3 +20,10 @@
 1. 内核驱动调试与Upstream：airoha_eth.c/airoha_ppe.c代码编写审查，checkpatch.pl校验，git format-patch + git send-email (Netdev规范)
 2. 轻量C/C++嵌入式推理：Q8量化、端侧NPU加速、ZeroClaw微调与推理验证
 3. OpenWrt/prplOS/RDK-B构建编译：Buildroot/Yocto/CMake交叉编译(ARM64 musl/glibc)，不修改第三方框架源码，DTS/Makefile/Kconfig裁剪
+§
+**/workspace 虚拟机重置机制（重要）**
+- /workspace 是一个 git 仓库
+- 虚拟机重置 = 整个 /workspace 目录恢复到上一次 git commit 的状态
+- 未 commit 的修改在重置后会全部丢失
+- 正确做法：修改文件后尽快 git add + git commit，commit 过的内容重置后仍保留
+- 重置后先 git log 确认最新 commit 是否是自己的，如果不是说明有远程更新，需 git pull 拉回
