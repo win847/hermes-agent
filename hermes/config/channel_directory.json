@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-06-06T07:55:44.155611",
+  "updated_at": "2026-06-06T07:58:15.829805",
   "platforms": {
     "telegram": [],
     "discord": [],
@@ -18,7 +18,14 @@
     "wecom_callback": [],
     "weixin": [],
     "bluebubbles": [],
-    "qqbot": [],
+    "qqbot": [
+      {
+        "id": "CF97503135C5ED918A1D924F63800589",
+        "name": "CF97503135C5ED918A1D924F63800589",
+        "type": "dm",
+        "thread_id": null
+      }
+    ],
     "yuanbao": [],
     "google_chat": [],
     "irc": [],
